@@ -99,7 +99,7 @@ add_library (mongoose ${SOURCES})
 target_link_libraries (mongoose ${EXTRA_LIBS} ${CMAKE_THREAD_LIBS_INIT})
 
 if (HAS_JSONCPP)
-    target_link_libraries (mongoose jsoncpp)
+    target_link_libraries (mongoose jsoncpp_lib)
 endif (HAS_JSONCPP)
 
 if (EXAMPLES OR MAIN)
